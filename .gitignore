@@ -1,0 +1,52 @@
+# ======================================================================
+# MOUNRIVER STUDIO / CH32V (MRS 1.x - Eclipse & MRS 2.x - VS Code)
+# ======================================================================
+
+# --- Compiled Output (Common to both) ---
+obj/
+bin/
+*.elf
+*.hex
+*.bin
+*.lst
+*.map
+*.o
+*.d
+
+.settings/
+.mrs
+.vscode/
+.history/
+*.wvproj.user
+
+# ======================================================================
+# KICAD (PCB & Schematic Design)
+# ======================================================================
+
+# --- Temporary & Lock Files ---
+*.lck
+*.bak
+*-bak
+*-save
+_autosave-*
+*.tmp
+
+# --- Local Project/Window Settings ---
+fp-info-cache
+*.kicad_prl
+
+# --- Output & Manufacturing ---
+# It is best practice to generate these manually for production
+*.log
+*.rpt
+gerber/
+plots/
+*.gbr
+*.drl
+
+# ======================================================================
+# GENERAL OS / TOOL FILES
+# ======================================================================
+.DS_Store
+Thumbs.db
+desktop.ini

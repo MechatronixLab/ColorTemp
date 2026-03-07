@@ -30,6 +30,8 @@ bin/
 *-save
 _autosave-*
 *.tmp
+*ColorTemp-backups/
+*auto_saved_files#
 
 # --- Local Project/Window Settings ---
 fp-info-cache

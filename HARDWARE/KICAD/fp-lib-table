@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ColorTemp")(type "KiCad")(uri "${KIPRJMOD}/ColorTemp.pretty")(options "")(descr ""))
+)

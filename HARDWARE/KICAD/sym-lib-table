@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ColorTemp")(type "KiCad")(uri "${KIPRJMOD}/ColorTemp.kicad_sym")(options "")(descr ""))
+)

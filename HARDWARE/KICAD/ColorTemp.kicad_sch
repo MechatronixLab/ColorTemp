@@ -5749,7 +5749,7 @@
 		(dnp no)
 		(uuid "149a78db-10d9-4e9b-b434-cdf684532a4e")
 		(property "Reference" "SW1"
-			(at 260.35 59.6899 90)
+			(at 260.35 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5757,8 +5757,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 260.35 62.2299 90)
+		(property "Value" "USER"
+			(at 260.35 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6909,7 +6909,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_PowerOnly_6P"
+		(property "Value" "POWER"
 			(at 40.64 45.72 0)
 			(effects
 				(font
@@ -7119,7 +7119,7 @@
 		(dnp no)
 		(uuid "9029ca28-9a39-40fb-b662-69bbe08ec97a")
 		(property "Reference" "SW2"
-			(at 226.06 58.42 90)
+			(at 224.79 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7128,7 +7128,7 @@
 			)
 		)
 		(property "Value" "~{RESET}"
-			(at 226.06 63.5 90)
+			(at 224.79 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)

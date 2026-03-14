@@ -6617,8 +6617,8 @@
 		(descr "Through hole straight pin header, 2x05, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x05 2.54mm double row")
 		(property "Reference" "J2"
-			(at 1.275 2.17 0)
-			(layer "B.SilkS")
+			(at -2.225 2.045 0)
+			(layer "B.SilkS" knockout)
 			(uuid "79fccfb3-3038-48c1-b5c4-0f9b5b96be9a")
 			(effects
 				(font

@@ -2805,6 +2805,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "ColorTemp:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ColorTemp:R0402 1K 1% 50V 62.5mW"
 			(pin_numbers
 				(hide yes)
@@ -3657,7 +3758,7 @@
 	)
 	(text "CHANGE TO 100R 0402"
 		(exclude_from_sim no)
-		(at 185.42 55.88 0)
+		(at 180.34 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3679,22 +3780,22 @@
 		(uuid "230bce2b-495b-4bda-9fe9-88d74069c724")
 	)
 	(junction
-		(at 58.42 53.34)
+		(at 119.38 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "393963f0-dc33-4d3e-920b-c2d5814a658c")
+		(uuid "346c8553-ca04-4c35-84e4-7c55242e9c44")
+	)
+	(junction
+		(at 63.5 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3683e9d1-620f-4568-b622-ae542fdce483")
 	)
 	(junction
 		(at 228.6 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "43415d0b-1f10-4e38-a86a-c43a58ab390c")
-	)
-	(junction
-		(at 115.57 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "627be8d3-048e-432c-90a7-d2fd42bbf127")
 	)
 	(junction
 		(at 246.38 104.14)
@@ -3709,6 +3810,12 @@
 		(uuid "742fd9b5-b196-4139-b416-bfac80b25b34")
 	)
 	(junction
+		(at 127 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b23f968f-e989-40f6-a88a-04948ac03a3f")
+	)
+	(junction
 		(at 40.64 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3719,12 +3826,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dece8b82-b4e1-4b25-816e-81a862ffc50b")
-	)
-	(junction
-		(at 123.19 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f19f076d-e97b-4542-8101-c7074567cd22")
 	)
 	(junction
 		(at 228.6 53.34)
@@ -3745,10 +3846,32 @@
 		(uuid "fa30ffa6-0c08-4238-a018-7b72cc6cab65")
 	)
 	(junction
-		(at 115.57 69.85)
+		(at 58.42 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc02bb07-1f69-452f-b6b0-edfc1c80ee0f")
+	)
+	(junction
+		(at 119.38 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd4734a2-8f85-4809-8909-c3d336b1be6a")
+	)
+	(no_connect
+		(at 142.24 67.31)
+		(uuid "4d3e6a73-d1e2-491a-833f-0fc9ff091aef")
+	)
+	(no_connect
+		(at 162.56 57.15)
+		(uuid "82d7301f-ca7b-4384-9ffb-0d84b3c3651e")
+	)
+	(no_connect
+		(at 162.56 54.61)
+		(uuid "95a02ffc-b963-45a9-bac7-0bfcc65d8d4d")
+	)
+	(no_connect
+		(at 162.56 67.31)
+		(uuid "ecf39137-3ff0-42d8-b77e-cb75ae50762a")
 	)
 	(wire
 		(pts
@@ -3762,7 +3885,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 69.85) (xy 115.57 72.39)
+			(xy 119.38 69.85) (xy 119.38 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3772,7 +3895,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 59.69) (xy 187.96 59.69)
+			(xy 176.53 59.69) (xy 190.5 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3792,7 +3915,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 64.77) (xy 187.96 64.77)
+			(xy 162.56 64.77) (xy 190.5 64.77)
 		)
 		(stroke
 			(width 0)
@@ -3802,7 +3925,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 54.61) (xy 142.24 54.61)
+			(xy 114.3 54.61) (xy 142.24 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3812,7 +3935,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 80.01) (xy 123.19 85.09)
+			(xy 127 80.01) (xy 127 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3842,7 +3965,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 156.21) (xy 146.05 156.21)
+			(xy 138.43 156.21) (xy 146.05 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3892,7 +4015,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 85.09) (xy 110.49 85.09)
+			(xy 114.3 85.09) (xy 127 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3922,7 +4045,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 72.39) (xy 132.08 85.09)
+			(xy 134.62 72.39) (xy 134.62 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3932,7 +4055,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 50.8) (xy 58.42 53.34)
+			(xy 63.5 50.8) (xy 63.5 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3952,7 +4075,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 153.67) (xy 146.05 153.67)
+			(xy 138.43 153.67) (xy 146.05 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3972,7 +4095,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 72.39) (xy 123.19 69.85)
+			(xy 127 72.39) (xy 127 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3992,7 +4115,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 69.85) (xy 129.54 69.85)
+			(xy 142.24 69.85) (xy 133.35 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4002,7 +4125,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 85.09) (xy 173.99 85.09)
+			(xy 190.5 85.09) (xy 170.18 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4012,7 +4135,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 69.85) (xy 123.19 69.85)
+			(xy 119.38 69.85) (xy 127 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4042,7 +4165,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 87.63) (xy 172.72 87.63)
+			(xy 190.5 87.63) (xy 168.91 87.63)
 		)
 		(stroke
 			(width 0)
@@ -4052,7 +4175,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 69.85) (xy 162.56 69.85)
+			(xy 171.45 69.85) (xy 162.56 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4092,7 +4215,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 69.85) (xy 129.54 82.55)
+			(xy 133.35 69.85) (xy 133.35 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4112,7 +4235,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 87.63) (xy 134.62 74.93)
+			(xy 135.89 87.63) (xy 135.89 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4122,7 +4245,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 82.55) (xy 115.57 82.55)
+			(xy 133.35 82.55) (xy 119.38 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4132,7 +4255,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 53.34) (xy 58.42 53.34)
+			(xy 67.31 53.34) (xy 63.5 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4142,7 +4265,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 49.53) (xy 187.96 49.53)
+			(xy 162.56 49.53) (xy 190.5 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4152,7 +4275,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 87.63) (xy 119.38 87.63)
+			(xy 114.3 87.63) (xy 123.19 87.63)
 		)
 		(stroke
 			(width 0)
@@ -4162,7 +4285,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 85.09) (xy 173.99 72.39)
+			(xy 170.18 85.09) (xy 170.18 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4172,7 +4295,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 67.31) (xy 115.57 69.85)
+			(xy 119.38 67.31) (xy 119.38 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4192,6 +4315,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 50.8) (xy 58.42 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73cd64d9-0285-4fdc-be2e-c4918d3a5d3e")
+	)
+	(wire
+		(pts
 			(xy 228.6 66.04) (xy 228.6 68.58)
 		)
 		(stroke
@@ -4202,7 +4335,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 72.39) (xy 162.56 72.39)
+			(xy 170.18 72.39) (xy 162.56 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4212,7 +4345,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 153.67) (xy 158.75 153.67)
+			(xy 166.37 153.67) (xy 158.75 153.67)
 		)
 		(stroke
 			(width 0)
@@ -4262,7 +4395,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 158.75) (xy 146.05 158.75)
+			(xy 138.43 158.75) (xy 146.05 158.75)
 		)
 		(stroke
 			(width 0)
@@ -4352,7 +4485,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 59.69) (xy 173.99 59.69)
+			(xy 162.56 59.69) (xy 168.91 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4362,7 +4495,17 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 52.07) (xy 119.38 52.07)
+			(xy 40.64 81.28) (xy 43.18 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a53a4961-1afe-478b-b797-667cf62031c8")
+	)
+	(wire
+		(pts
+			(xy 114.3 52.07) (xy 123.19 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4372,7 +4515,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 151.13) (xy 158.75 151.13)
+			(xy 166.37 151.13) (xy 158.75 151.13)
 		)
 		(stroke
 			(width 0)
@@ -4392,7 +4535,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 82.55) (xy 175.26 69.85)
+			(xy 171.45 82.55) (xy 171.45 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4402,7 +4545,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 49.53) (xy 142.24 49.53)
+			(xy 114.3 49.53) (xy 142.24 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4432,7 +4575,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 53.34) (xy 68.58 55.88)
+			(xy 74.93 53.34) (xy 74.93 55.88)
 		)
 		(stroke
 			(width 0)
@@ -4452,7 +4595,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 74.93) (xy 142.24 74.93)
+			(xy 135.89 74.93) (xy 142.24 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4492,7 +4635,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 151.13) (xy 146.05 151.13)
+			(xy 138.43 151.13) (xy 146.05 151.13)
 		)
 		(stroke
 			(width 0)
@@ -4512,7 +4655,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 59.69) (xy 142.24 59.69)
+			(xy 114.3 59.69) (xy 142.24 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4522,7 +4665,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 82.55) (xy 175.26 82.55)
+			(xy 190.5 82.55) (xy 171.45 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4532,7 +4675,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 53.34) (xy 66.04 53.34)
+			(xy 74.93 53.34) (xy 72.39 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4552,7 +4695,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 74.93) (xy 162.56 74.93)
+			(xy 168.91 74.93) (xy 162.56 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4582,7 +4725,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 114.3) (xy 165.1 114.3)
+			(xy 162.56 114.3) (xy 166.37 114.3)
 		)
 		(stroke
 			(width 0)
@@ -4592,7 +4735,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 156.21) (xy 158.75 156.21)
+			(xy 166.37 156.21) (xy 158.75 156.21)
 		)
 		(stroke
 			(width 0)
@@ -4602,7 +4745,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 158.75) (xy 158.75 158.75)
+			(xy 166.37 158.75) (xy 158.75 158.75)
 		)
 		(stroke
 			(width 0)
@@ -4612,7 +4755,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 87.63) (xy 134.62 87.63)
+			(xy 130.81 87.63) (xy 135.89 87.63)
 		)
 		(stroke
 			(width 0)
@@ -4642,7 +4785,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 85.09) (xy 123.19 85.09)
+			(xy 134.62 85.09) (xy 127 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4652,7 +4795,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 87.63) (xy 172.72 74.93)
+			(xy 168.91 87.63) (xy 168.91 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4662,7 +4805,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 72.39) (xy 132.08 72.39)
+			(xy 142.24 72.39) (xy 134.62 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4692,13 +4835,23 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 82.55) (xy 110.49 82.55)
+			(xy 114.3 82.55) (xy 119.38 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ea5ac167-c06c-4bcc-8666-d45b59bb9069")
+	)
+	(wire
+		(pts
+			(xy 43.18 78.74) (xy 43.18 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb25f562-a696-45d9-bf1b-a3c962f7b7c6")
 	)
 	(wire
 		(pts
@@ -4742,7 +4895,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 52.07) (xy 187.96 52.07)
+			(xy 162.56 52.07) (xy 190.5 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4752,7 +4905,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 52.07) (xy 142.24 52.07)
+			(xy 130.81 52.07) (xy 142.24 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4762,13 +4915,23 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 80.01) (xy 115.57 82.55)
+			(xy 119.38 80.01) (xy 119.38 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f550a618-bc85-4fc6-ad90-d6323d78b691")
+	)
+	(wire
+		(pts
+			(xy 58.42 53.34) (xy 63.5 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f838d8fd-f57d-4671-82e5-436e03b21f14")
 	)
 	(wire
 		(pts
@@ -4832,7 +4995,7 @@
 	)
 	(global_label "UART RX"
 		(shape input)
-		(at 187.96 49.53 0)
+		(at 190.5 49.53 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4842,7 +5005,7 @@
 		)
 		(uuid "2fdd0b3b-1158-47d5-b2fc-2b7183fbe94f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.049 49.53 0)
+			(at 201.589 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4876,7 +5039,7 @@
 	)
 	(global_label "UART RX"
 		(shape output)
-		(at 168.91 156.21 0)
+		(at 166.37 156.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4886,7 +5049,7 @@
 		)
 		(uuid "34c7ff7d-8e85-47a7-9424-9866b92ac8c7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 179.999 156.21 0)
+			(at 177.459 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4898,7 +5061,7 @@
 	)
 	(global_label "PC6"
 		(shape bidirectional)
-		(at 187.96 82.55 0)
+		(at 190.5 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4908,7 +5071,7 @@
 		)
 		(uuid "582e6778-2037-4f1a-a73c-6595004f8e1e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.806 82.55 0)
+			(at 198.346 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4942,7 +5105,7 @@
 	)
 	(global_label "LED BLUE"
 		(shape input)
-		(at 187.96 59.69 0)
+		(at 190.5 59.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4952,7 +5115,7 @@
 		)
 		(uuid "6295262b-c6d2-4f35-9d1b-129e51014041")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.1375 59.69 0)
+			(at 202.6775 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4964,7 +5127,7 @@
 	)
 	(global_label "UART TX"
 		(shape input)
-		(at 137.16 156.21 180)
+		(at 138.43 156.21 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4974,7 +5137,7 @@
 		)
 		(uuid "7f76a824-6d50-429e-9d7b-6455c6ab1e73")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.0711 156.21 0)
+			(at 127.3411 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4986,7 +5149,7 @@
 	)
 	(global_label "LED RED"
 		(shape input)
-		(at 110.49 87.63 180)
+		(at 114.3 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4996,7 +5159,7 @@
 		)
 		(uuid "837c8c47-46de-41e9-ae2c-d852f834a70e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.4011 87.63 0)
+			(at 103.2111 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5008,7 +5171,7 @@
 	)
 	(global_label "I2C SCL"
 		(shape input)
-		(at 168.91 158.75 0)
+		(at 166.37 158.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5018,7 +5181,7 @@
 		)
 		(uuid "88760e68-1495-4e70-b205-a1d65153403c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 179.4547 158.75 0)
+			(at 176.9147 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5052,7 +5215,7 @@
 	)
 	(global_label "UART TX"
 		(shape output)
-		(at 187.96 52.07 0)
+		(at 190.5 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5062,7 +5225,7 @@
 		)
 		(uuid "9cb59970-e8e5-4e55-98ac-34037f3d11ab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.0489 52.07 0)
+			(at 201.5889 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5074,7 +5237,7 @@
 	)
 	(global_label "~{RESET}"
 		(shape input)
-		(at 110.49 49.53 180)
+		(at 114.3 49.53 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5084,7 +5247,7 @@
 		)
 		(uuid "a89f3e8e-fc0e-47e6-a9c8-849158d02e31")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.4011 49.53 0)
+			(at 103.2111 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5096,7 +5259,7 @@
 	)
 	(global_label "PC4"
 		(shape bidirectional)
-		(at 187.96 87.63 0)
+		(at 190.5 87.63 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5106,7 +5269,7 @@
 		)
 		(uuid "acebfb88-0294-42a8-ba05-d17342bdb32b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.806 87.63 0)
+			(at 198.346 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5118,7 +5281,7 @@
 	)
 	(global_label "PC5"
 		(shape bidirectional)
-		(at 137.16 153.67 180)
+		(at 138.43 153.67 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5128,7 +5291,7 @@
 		)
 		(uuid "b656830b-f925-48c5-a568-3a1f38c35fd4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.314 153.67 0)
+			(at 130.584 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5140,7 +5303,7 @@
 	)
 	(global_label "PC4"
 		(shape bidirectional)
-		(at 168.91 151.13 0)
+		(at 166.37 151.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5150,7 +5313,7 @@
 		)
 		(uuid "b8b92481-2255-42af-a9b2-c1cc4e267d2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.756 151.13 0)
+			(at 174.216 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5184,7 +5347,7 @@
 	)
 	(global_label "I2C SCL"
 		(shape output)
-		(at 110.49 85.09 180)
+		(at 114.3 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5194,7 +5357,7 @@
 		)
 		(uuid "bc6da1b1-920f-44a7-a14a-8a809694318d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.9453 85.09 0)
+			(at 103.7553 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5206,7 +5369,7 @@
 	)
 	(global_label "TEMPERATURE"
 		(shape output)
-		(at 165.1 114.3 0)
+		(at 166.37 114.3 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5216,7 +5379,7 @@
 		)
 		(uuid "c196ff1b-6716-412d-b07b-7bb911f7d7d2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.1889 114.3 0)
+			(at 177.4589 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5228,7 +5391,7 @@
 	)
 	(global_label "DIO"
 		(shape bidirectional)
-		(at 137.16 151.13 180)
+		(at 138.43 151.13 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5238,7 +5401,7 @@
 		)
 		(uuid "c4348ddc-c37e-47a6-91c4-626d0d17b73f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.8582 151.13 0)
+			(at 131.1282 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5272,7 +5435,7 @@
 	)
 	(global_label "PC5"
 		(shape bidirectional)
-		(at 187.96 85.09 0)
+		(at 190.5 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5282,7 +5445,7 @@
 		)
 		(uuid "ce7722c4-f9dd-4f71-98b3-0b6b76f1a6a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.806 85.09 0)
+			(at 198.346 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5294,7 +5457,7 @@
 	)
 	(global_label "USER"
 		(shape input)
-		(at 110.49 59.69 180)
+		(at 114.3 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5304,7 +5467,7 @@
 		)
 		(uuid "d5f85c2c-c202-437d-81d8-e88a646aa51f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.5458 59.69 0)
+			(at 106.3558 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5316,7 +5479,7 @@
 	)
 	(global_label "PC6"
 		(shape bidirectional)
-		(at 168.91 153.67 0)
+		(at 166.37 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5326,7 +5489,7 @@
 		)
 		(uuid "e66fc5d7-4dfa-487c-b09c-a36ca046b08d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.756 153.67 0)
+			(at 174.216 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5338,7 +5501,7 @@
 	)
 	(global_label "LED GREEN"
 		(shape input)
-		(at 110.49 52.07 180)
+		(at 114.3 52.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5348,7 +5511,7 @@
 		)
 		(uuid "e6a0d69f-d441-4991-ab90-dd26f7a7db3b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 96.9216 52.07 0)
+			(at 100.7316 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5360,7 +5523,7 @@
 	)
 	(global_label "I2C SDA"
 		(shape bidirectional)
-		(at 110.49 82.55 180)
+		(at 114.3 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5370,7 +5533,7 @@
 		)
 		(uuid "e72f451e-ce0c-4aa8-9f96-86514cd64f33")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 98.7735 82.55 0)
+			(at 102.5835 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5382,7 +5545,7 @@
 	)
 	(global_label "I2C SDA"
 		(shape bidirectional)
-		(at 137.16 158.75 180)
+		(at 138.43 158.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5392,7 +5555,7 @@
 		)
 		(uuid "e75f20dd-9d11-4f27-9394-7ebdfcd357e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 125.4435 158.75 0)
+			(at 126.7135 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5404,7 +5567,7 @@
 	)
 	(global_label "TEMPERATURE"
 		(shape input)
-		(at 110.49 54.61 180)
+		(at 114.3 54.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5414,7 +5577,7 @@
 		)
 		(uuid "f2d35a02-ab87-4297-8d3d-89d5fc12deac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.4011 54.61 0)
+			(at 103.2111 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5426,7 +5589,7 @@
 	)
 	(global_label "DIO"
 		(shape bidirectional)
-		(at 187.96 64.77 0)
+		(at 190.5 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5436,7 +5599,7 @@
 		)
 		(uuid "fa88b4a8-9258-4943-b0e4-cdff40b52851")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.2618 64.77 0)
+			(at 197.8018 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5506,6 +5669,73 @@
 			(project "ColorTemp"
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ColorTemp:PWR_FLAG")
+		(at 43.18 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01bf9f25-98a2-401f-bf41-137789465e83")
+		(property "Reference" "#FLG02"
+			(at 43.18 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 43.18 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 43.18 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b9c8825-ec28-4366-83d6-ccb0968e2087")
+		)
+		(instances
+			(project "ColorTemp"
+				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -5753,7 +5983,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:GND")
-		(at 68.58 55.88 0)
+		(at 74.93 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5762,7 +5992,7 @@
 		(fields_autoplaced yes)
 		(uuid "12dc2f1a-8c24-4d5a-9ae7-54d33e59b2e9")
 		(property "Reference" "#PWR014"
-			(at 68.58 62.23 0)
+			(at 74.93 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5771,7 +6001,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.58 60.96 0)
+			(at 74.93 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5780,7 +6010,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 55.88 0)
+			(at 74.93 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5789,7 +6019,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 55.88 0)
+			(at 74.93 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5798,7 +6028,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 55.88 0)
+			(at 74.93 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5917,7 +6147,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:R0402 1K 1% 50V 62.5mW")
-		(at 123.19 87.63 270)
+		(at 127 87.63 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5925,8 +6155,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1c72a4d6-e81a-4a73-8588-7577697c3a10")
-		(property "Reference" "R3"
-			(at 119.38 86.36 90)
+		(property "Reference" "R4"
+			(at 123.19 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5934,7 +6164,7 @@
 			)
 		)
 		(property "Value" "1K 1%"
-			(at 118.11 88.9 90)
+			(at 121.92 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5942,7 +6172,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:R_0402_1005Metric"
-			(at 122.936 86.614 90)
+			(at 126.746 86.614 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5951,7 +6181,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
-			(at 123.19 87.63 0)
+			(at 127 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5960,7 +6190,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 123.19 87.63 0)
+			(at 127 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5969,7 +6199,7 @@
 			)
 		)
 		(property "Part Number" "0402WGF1001TCE"
-			(at 123.19 87.63 0)
+			(at 127 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5978,7 +6208,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 123.19 87.63 0)
+			(at 127 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5987,7 +6217,7 @@
 			)
 		)
 		(property "JLCPCB" "C11702"
-			(at 123.19 87.63 0)
+			(at 127 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6004,7 +6234,7 @@
 		(instances
 			(project "ColorTemp"
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "R3")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -6018,18 +6248,17 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "22600d20-95fa-4538-a794-23368906cab5")
 		(property "Reference" "J2"
-			(at 152.4 142.24 0)
+			(at 152.4 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_02x05_Odd_Even"
-			(at 152.4 144.78 0)
+		(property "Value" "EXPANSION"
+			(at 152.4 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6200,7 +6429,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:R0402 1K 1% 50V 62.5mW")
-		(at 123.19 52.07 270)
+		(at 127 52.07 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6208,8 +6437,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35a6864f-f0a5-4d02-9316-c757420dabb9")
-		(property "Reference" "R2"
-			(at 119.38 50.8 90)
+		(property "Reference" "R3"
+			(at 123.19 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6217,7 +6446,7 @@
 			)
 		)
 		(property "Value" "1K 1%"
-			(at 118.11 53.34 90)
+			(at 121.92 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6225,7 +6454,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:R_0402_1005Metric"
-			(at 122.936 51.054 90)
+			(at 126.746 51.054 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6234,7 +6463,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
-			(at 123.19 52.07 0)
+			(at 127 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6243,7 +6472,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 123.19 52.07 0)
+			(at 127 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6252,7 +6481,7 @@
 			)
 		)
 		(property "Part Number" "0402WGF1001TCE"
-			(at 123.19 52.07 0)
+			(at 127 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6261,7 +6490,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 123.19 52.07 0)
+			(at 127 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6270,7 +6499,7 @@
 			)
 		)
 		(property "JLCPCB" "C11702"
-			(at 123.19 52.07 0)
+			(at 127 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6287,7 +6516,167 @@
 		(instances
 			(project "ColorTemp"
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "R2")
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ColorTemp:MountingHole")
+		(at 25.4 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4076934e-6551-4bde-8ef7-d355eb8a9e6c")
+		(property "Reference" "H3"
+			(at 27.94 176.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 27.94 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ColorTemp:MountingHole_3.2mm_M3"
+			(at 25.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 25.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ColorTemp"
+				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ColorTemp:R0402 5.1K 1% 50V 62.5mW")
+		(at 127 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41957012-fb04-46ab-be4f-05d2a393f1d8")
+		(property "Reference" "R9"
+			(at 124.46 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.1K 1%"
+			(at 129.54 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ColorTemp:R_0402_1005Metric"
+			(at 128.016 76.454 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
+			(at 127 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 127 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0402WGF1001TCE"
+			(at 127 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 127 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C11702"
+			(at 127 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec7712cf-effb-4ce5-9c13-32d8cd6debe4")
+		)
+		(pin "2"
+			(uuid "9c92cbd2-50bc-428f-bc9a-4813acab972d")
+		)
+		(instances
+			(project "ColorTemp"
+				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -6302,7 +6691,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4076934e-6551-4bde-8ef7-d355eb8a9e6c")
+		(uuid "46e46305-8044-46b9-8c09-e51bdcc80eeb")
 		(property "Reference" "H4"
 			(at 53.34 176.5299 0)
 			(effects
@@ -6358,166 +6747,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ColorTemp:R0402 5.1K 1% 50V 62.5mW")
-		(at 123.19 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "41957012-fb04-46ab-be4f-05d2a393f1d8")
-		(property "Reference" "R1"
-			(at 120.65 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5.1K 1%"
-			(at 125.73 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "ColorTemp:R_0402_1005Metric"
-			(at 124.206 76.454 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
-			(at 123.19 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 123.19 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "0402WGF1001TCE"
-			(at 123.19 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 123.19 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C11702"
-			(at 123.19 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ec7712cf-effb-4ce5-9c13-32d8cd6debe4")
-		)
-		(pin "2"
-			(uuid "9c92cbd2-50bc-428f-bc9a-4813acab972d")
-		)
-		(instances
-			(project "ColorTemp"
-				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ColorTemp:MountingHole")
-		(at 25.4 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "46e46305-8044-46b9-8c09-e51bdcc80eeb")
-		(property "Reference" "H2"
-			(at 27.94 176.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 27.94 179.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "ColorTemp:MountingHole_3.2mm_M3"
-			(at 25.4 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 25.4 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 25.4 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "ColorTemp"
-				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "ColorTemp:C0402 100nF 50V X7R")
 		(at 130.81 35.56 90)
 		(mirror x)
@@ -6527,7 +6756,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50e08ed8-b39d-4065-a56e-4cd32b89e137")
-		(property "Reference" "C1"
+		(property "Reference" "C3"
 			(at 129.54 36.83 90)
 			(effects
 				(font
@@ -6608,7 +6837,7 @@
 		(instances
 			(project ""
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "C1")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -6681,7 +6910,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:Fiducial")
-		(at 25.4 152.4 0)
+		(at 50.8 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -6689,8 +6918,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51d79690-aad7-476c-ae32-d17034288b88")
-		(property "Reference" "FID2"
-			(at 27.94 151.1299 0)
+		(property "Reference" "FID1"
+			(at 53.34 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6699,7 +6928,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 27.94 153.6699 0)
+			(at 53.34 140.9699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6708,7 +6937,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:Fiducial_0.5mm_Mask1mm"
-			(at 25.4 152.4 0)
+			(at 50.8 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6717,7 +6946,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 152.4 0)
+			(at 50.8 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6726,7 +6955,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 25.4 152.4 0)
+			(at 50.8 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6737,7 +6966,7 @@
 		(instances
 			(project "ColorTemp"
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "FID2")
+					(reference "FID1")
 					(unit 1)
 				)
 			)
@@ -6817,7 +7046,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "55325532-7c3a-4eb4-a9a3-1e7cfac83975")
-		(property "Reference" "C3"
+		(property "Reference" "C4"
 			(at 144.78 101.6 90)
 			(effects
 				(font
@@ -6896,73 +7125,7 @@
 		(instances
 			(project "ColorTemp"
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ColorTemp:GND")
-		(at 86.36 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "55e61259-2d24-4ea3-af15-b8c1064590d9")
-		(property "Reference" "#PWR04"
-			(at 86.36 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 86.36 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "96893350-ade4-4f27-a451-8cb46b20cccb")
-		)
-		(instances
-			(project "ColorTemp"
-				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "#PWR04")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -7120,7 +7283,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:Fiducial")
-		(at 25.4 139.7 0)
+		(at 25.4 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7128,8 +7291,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60c80967-d256-4a7f-9438-9c91b3eaa7ad")
-		(property "Reference" "FID1"
-			(at 27.94 138.4299 0)
+		(property "Reference" "FID2"
+			(at 27.94 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7138,7 +7301,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 27.94 140.9699 0)
+			(at 27.94 147.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7147,7 +7310,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:Fiducial_0.5mm_Mask1mm"
-			(at 25.4 139.7 0)
+			(at 25.4 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7156,7 +7319,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 139.7 0)
+			(at 25.4 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7165,7 +7328,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 25.4 139.7 0)
+			(at 25.4 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7176,73 +7339,7 @@
 		(instances
 			(project ""
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "FID1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ColorTemp:+5V")
-		(at 86.36 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "71550d7f-3f95-4800-b2ed-ad61448b617f")
-		(property "Reference" "#PWR03"
-			(at 86.36 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 86.36 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 86.36 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fe253c64-ebcf-4ad7-a318-ff9a0a5bbfcb")
-		)
-		(instances
-			(project "ColorTemp"
-				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "#PWR03")
+					(reference "FID2")
 					(unit 1)
 				)
 			)
@@ -7414,6 +7511,73 @@
 		)
 	)
 	(symbol
+		(lib_id "ColorTemp:PWR_FLAG")
+		(at 58.42 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90621437-69c9-407e-9d47-ddae6a85344f")
+		(property "Reference" "#FLG01"
+			(at 58.42 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 58.42 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 58.42 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bf69c7d8-8993-499f-aa6b-ace41fae6044")
+		)
+		(instances
+			(project ""
+				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ColorTemp:GND")
 		(at 161.29 161.29 0)
 		(unit 1)
@@ -7489,7 +7653,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ab54b0a9-789e-4ae0-a5f6-a7dabb4ec5ab")
-		(property "Reference" "R8"
+		(property "Reference" "R2"
 			(at 63.5 76.2 90)
 			(effects
 				(font
@@ -7570,7 +7734,7 @@
 		(instances
 			(project "ColorTemp"
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "R8")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -7578,7 +7742,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:MountingHole")
-		(at 25.4 165.1 0)
+		(at 50.8 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7586,8 +7750,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af2f646c-b599-48bb-8299-a69570af4e6a")
-		(property "Reference" "H1"
-			(at 27.94 163.8299 0)
+		(property "Reference" "H2"
+			(at 53.34 163.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7596,7 +7760,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 27.94 166.3699 0)
+			(at 53.34 166.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7605,7 +7769,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:MountingHole_3.2mm_M3"
-			(at 25.4 165.1 0)
+			(at 50.8 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7614,7 +7778,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 165.1 0)
+			(at 50.8 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7623,7 +7787,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 25.4 165.1 0)
+			(at 50.8 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7634,7 +7798,7 @@
 		(instances
 			(project ""
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "H1")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -7709,7 +7873,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:+5V")
-		(at 115.57 67.31 0)
+		(at 119.38 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7717,7 +7881,7 @@
 		(dnp no)
 		(uuid "bd690e8b-c6a9-4af7-833c-7baf3e8283ba")
 		(property "Reference" "#PWR019"
-			(at 115.57 71.12 0)
+			(at 119.38 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7726,7 +7890,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 115.57 63.5 0)
+			(at 119.38 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7734,7 +7898,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 67.31 0)
+			(at 119.38 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7743,7 +7907,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 67.31 0)
+			(at 119.38 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7752,7 +7916,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 115.57 67.31 0)
+			(at 119.38 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7839,15 +8003,15 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:R0402 1K 1% 50V 62.5mW")
-		(at 177.8 59.69 90)
+		(at 172.72 59.69 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "c589adc0-0150-42c8-9ce7-92f539b2c258")
-		(property "Reference" "R4"
-			(at 181.61 58.42 90)
+		(property "Reference" "R5"
+			(at 176.53 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7855,7 +8019,7 @@
 			)
 		)
 		(property "Value" "1K 1%"
-			(at 182.88 60.96 90)
+			(at 177.8 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7863,7 +8027,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:R_0402_1005Metric"
-			(at 178.054 58.674 90)
+			(at 172.974 58.674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7872,7 +8036,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
-			(at 177.8 59.69 0)
+			(at 172.72 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7881,7 +8045,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 177.8 59.69 0)
+			(at 172.72 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7890,7 +8054,7 @@
 			)
 		)
 		(property "Part Number" "0402WGF1001TCE"
-			(at 177.8 59.69 0)
+			(at 172.72 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7899,7 +8063,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 177.8 59.69 0)
+			(at 172.72 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7908,7 +8072,7 @@
 			)
 		)
 		(property "JLCPCB" "C11702"
-			(at 177.8 59.69 0)
+			(at 172.72 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7925,7 +8089,7 @@
 		(instances
 			(project ""
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "R4")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -7940,7 +8104,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c70ebd63-77ea-4313-9164-b5782ad1b4df")
-		(property "Reference" "R9"
+		(property "Reference" "R1"
 			(at 55.88 76.2 90)
 			(effects
 				(font
@@ -8021,7 +8185,7 @@
 		(instances
 			(project ""
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "R9")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -8029,7 +8193,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:MountingHole")
-		(at 50.8 165.1 0)
+		(at 25.4 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8037,8 +8201,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c85f9e66-2841-4876-ac71-aa1c28cad281")
-		(property "Reference" "H3"
-			(at 53.34 163.8299 0)
+		(property "Reference" "H1"
+			(at 27.94 163.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8047,7 +8211,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 53.34 166.3699 0)
+			(at 27.94 166.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8056,7 +8220,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:MountingHole_3.2mm_M3"
-			(at 50.8 165.1 0)
+			(at 25.4 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8065,7 +8229,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 165.1 0)
+			(at 25.4 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8074,7 +8238,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 50.8 165.1 0)
+			(at 25.4 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8085,7 +8249,7 @@
 		(instances
 			(project "ColorTemp"
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "H3")
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -8225,15 +8389,15 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:C0805 10uF 25V X5R")
-		(at 63.5 53.34 90)
+		(at 69.85 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "dd818fe2-5996-4a91-ad35-e19223235cb5")
-		(property "Reference" "C4"
-			(at 63.5 50.8 90)
+		(property "Reference" "C1"
+			(at 69.85 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8241,7 +8405,7 @@
 			)
 		)
 		(property "Value" "10uF 25V"
-			(at 63.5 55.88 90)
+			(at 69.85 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8249,7 +8413,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:C_0805_2012Metric"
-			(at 63.5 53.34 0)
+			(at 69.85 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8258,7 +8422,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8554627388281098240"
-			(at 63.5 53.34 0)
+			(at 69.85 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8267,7 +8431,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 63.5 53.34 0)
+			(at 69.85 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8276,7 +8440,7 @@
 			)
 		)
 		(property "Part Number" "CL21A106KAYNNNE"
-			(at 63.5 53.34 0)
+			(at 69.85 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8285,7 +8449,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 63.5 53.34 0)
+			(at 69.85 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8294,7 +8458,7 @@
 			)
 		)
 		(property "JLCPCB" "C15850"
-			(at 63.5 53.34 0)
+			(at 69.85 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8311,7 +8475,7 @@
 		(instances
 			(project ""
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "C4")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -8319,15 +8483,15 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:R0402 5.1K 1% 50V 62.5mW")
-		(at 115.57 76.2 0)
+		(at 119.38 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "dfb9bc9a-6d8b-4b3e-9d89-379183467d51")
-		(property "Reference" "R5"
-			(at 113.03 77.47 90)
+		(property "Reference" "R8"
+			(at 116.84 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8336,7 +8500,7 @@
 			)
 		)
 		(property "Value" "5.1K 1%"
-			(at 118.11 80.01 90)
+			(at 121.92 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8345,7 +8509,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:R_0402_1005Metric"
-			(at 116.586 76.454 90)
+			(at 120.396 76.454 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8354,7 +8518,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
-			(at 115.57 76.2 0)
+			(at 119.38 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8363,7 +8527,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 115.57 76.2 0)
+			(at 119.38 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8372,7 +8536,7 @@
 			)
 		)
 		(property "Part Number" "0402WGF1001TCE"
-			(at 115.57 76.2 0)
+			(at 119.38 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8381,7 +8545,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 115.57 76.2 0)
+			(at 119.38 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8390,7 +8554,7 @@
 			)
 		)
 		(property "JLCPCB" "C11702"
-			(at 115.57 76.2 0)
+			(at 119.38 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8407,7 +8571,7 @@
 		(instances
 			(project "ColorTemp"
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
-					(reference "R5")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -8831,7 +8995,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:+5V")
-		(at 58.42 50.8 0)
+		(at 63.5 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8839,7 +9003,7 @@
 		(dnp no)
 		(uuid "f7b3a92b-c869-4f3f-a3a2-5ccf374dc101")
 		(property "Reference" "#PWR010"
-			(at 58.42 54.61 0)
+			(at 63.5 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8848,7 +9012,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 58.42 46.99 0)
+			(at 63.5 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8856,7 +9020,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 50.8 0)
+			(at 63.5 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8865,7 +9029,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 50.8 0)
+			(at 63.5 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8874,7 +9038,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 58.42 50.8 0)
+			(at 63.5 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)

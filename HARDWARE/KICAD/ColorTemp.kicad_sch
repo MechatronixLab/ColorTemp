@@ -1774,6 +1774,86 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "ColorTemp:Fiducial"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "FID"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fiducial"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "ColorTemp:Fiducial_0.5mm_Mask1mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fiducial Marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fiducial marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Fiducial*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fiducial_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ColorTemp:GND"
 			(power)
 			(pin_numbers
@@ -6215,7 +6295,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:MountingHole")
-		(at 52.07 186.69 0)
+		(at 50.8 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -6224,7 +6304,7 @@
 		(fields_autoplaced yes)
 		(uuid "4076934e-6551-4bde-8ef7-d355eb8a9e6c")
 		(property "Reference" "H4"
-			(at 54.61 185.4199 0)
+			(at 53.34 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6233,7 +6313,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 54.61 187.9599 0)
+			(at 53.34 179.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6242,7 +6322,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:MountingHole_3.2mm_M3"
-			(at 52.07 186.69 0)
+			(at 50.8 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6251,7 +6331,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 186.69 0)
+			(at 50.8 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6260,7 +6340,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 52.07 186.69 0)
+			(at 50.8 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6375,7 +6455,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:MountingHole")
-		(at 26.67 186.69 0)
+		(at 25.4 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -6384,7 +6464,7 @@
 		(fields_autoplaced yes)
 		(uuid "46e46305-8044-46b9-8c09-e51bdcc80eeb")
 		(property "Reference" "H2"
-			(at 29.21 185.4199 0)
+			(at 27.94 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6393,7 +6473,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 29.21 187.9599 0)
+			(at 27.94 179.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6402,7 +6482,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:MountingHole_3.2mm_M3"
-			(at 26.67 186.69 0)
+			(at 25.4 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6411,7 +6491,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 186.69 0)
+			(at 25.4 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6420,7 +6500,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 26.67 186.69 0)
+			(at 25.4 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6594,6 +6674,70 @@
 			(project "ColorTemp"
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ColorTemp:Fiducial")
+		(at 25.4 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51d79690-aad7-476c-ae32-d17034288b88")
+		(property "Reference" "FID2"
+			(at 27.94 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 27.94 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ColorTemp:Fiducial_0.5mm_Mask1mm"
+			(at 25.4 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 25.4 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ColorTemp"
+				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
+					(reference "FID2")
 					(unit 1)
 				)
 			)
@@ -6969,6 +7113,70 @@
 			(project ""
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ColorTemp:Fiducial")
+		(at 25.4 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60c80967-d256-4a7f-9438-9c91b3eaa7ad")
+		(property "Reference" "FID1"
+			(at 27.94 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 27.94 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ColorTemp:Fiducial_0.5mm_Mask1mm"
+			(at 25.4 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 25.4 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
+					(reference "FID1")
 					(unit 1)
 				)
 			)
@@ -7370,7 +7578,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:MountingHole")
-		(at 26.67 173.99 0)
+		(at 25.4 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7379,7 +7587,7 @@
 		(fields_autoplaced yes)
 		(uuid "af2f646c-b599-48bb-8299-a69570af4e6a")
 		(property "Reference" "H1"
-			(at 29.21 172.7199 0)
+			(at 27.94 163.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7388,7 +7596,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 29.21 175.2599 0)
+			(at 27.94 166.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7397,7 +7605,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:MountingHole_3.2mm_M3"
-			(at 26.67 173.99 0)
+			(at 25.4 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7406,7 +7614,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 173.99 0)
+			(at 25.4 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7415,7 +7623,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 26.67 173.99 0)
+			(at 25.4 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7821,7 +8029,7 @@
 	)
 	(symbol
 		(lib_id "ColorTemp:MountingHole")
-		(at 52.07 173.99 0)
+		(at 50.8 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7830,7 +8038,7 @@
 		(fields_autoplaced yes)
 		(uuid "c85f9e66-2841-4876-ac71-aa1c28cad281")
 		(property "Reference" "H3"
-			(at 54.61 172.7199 0)
+			(at 53.34 163.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7839,7 +8047,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 54.61 175.2599 0)
+			(at 53.34 166.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7848,7 +8056,7 @@
 			)
 		)
 		(property "Footprint" "ColorTemp:MountingHole_3.2mm_M3"
-			(at 52.07 173.99 0)
+			(at 50.8 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7857,7 +8065,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 173.99 0)
+			(at 50.8 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7866,7 +8074,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 52.07 173.99 0)
+			(at 50.8 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8200,6 +8408,70 @@
 			(project "ColorTemp"
 				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ColorTemp:Fiducial")
+		(at 50.8 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0ae2753-182a-495c-aece-99f31db68195")
+		(property "Reference" "FID3"
+			(at 53.34 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 53.34 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ColorTemp:Fiducial_0.5mm_Mask1mm"
+			(at 50.8 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 50.8 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ColorTemp"
+				(path "/b6e9e66b-bd82-486a-892a-2943c5ea8e95"
+					(reference "FID3")
 					(unit 1)
 				)
 			)

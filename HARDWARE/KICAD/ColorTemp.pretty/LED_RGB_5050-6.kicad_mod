@@ -56,28 +56,40 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -2.5 -2.7)
-		(end 2.5 -2.7)
+		(start -2.5 -2.75)
+		(end 2.5 -2.75)
 		(stroke
-			(width 0.12)
-			(type solid)
+			(width 0.1)
+			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "33e47f92-664a-4f3f-88d5-8b2c9dff7e9f")
+		(uuid "26d98910-3e51-49fb-a200-ff4afb9baa17")
 	)
 	(fp_line
-		(start 2.5 2.7)
-		(end -2.5 2.7)
+		(start -2.5 2.75)
+		(end 2.5 2.75)
 		(stroke
-			(width 0.12)
-			(type solid)
+			(width 0.1)
+			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "5cf4293f-6507-4436-9196-9a0cca944b0b")
+		(uuid "c4da0e9a-c442-4f21-b90c-d070868cc32d")
 	)
 	(fp_poly
 		(pts
-			(xy -3 -2.5) (xy -3.24 -2.83) (xy -2.76 -2.83) (xy -3 -2.5)
+			(xy 3.65 0.6) (xy 3.2 1.05) (xy 3.65 1.05)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "4e4fd12e-dbe8-49ac-81ee-684ad044b204")
+	)
+	(fp_poly
+		(pts
+			(xy -2.999903 -2.5) (xy -3.239903 -2.83) (xy -2.759903 -2.83) (xy -2.999903 -2.5)
 		)
 		(stroke
 			(width 0.12)
@@ -86,6 +98,30 @@
 		(fill yes)
 		(layer "F.SilkS")
 		(uuid "7e0fc3bc-47d9-47c0-81f5-72900eec9e3f")
+	)
+	(fp_poly
+		(pts
+			(xy 2.15 2.35) (xy 1.75 2.75) (xy 3.65 2.75) (xy 3.65 2.35)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "d9687dd8-5d4f-41ee-843f-31f820be4553")
+	)
+	(fp_poly
+		(pts
+			(xy 3.65 1.05) (xy 3.65 2.35) (xy 3.5 2.35) (xy 3.5 1.05)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "80436862-e91b-4c45-bd71-07c697844a81")
 	)
 	(fp_line
 		(start -3.65 -2.75)
@@ -138,16 +174,6 @@
 		(uuid "2aa21f2a-4ce7-4eab-a2ba-f3891147c155")
 	)
 	(fp_line
-		(start -2.5 -1.9)
-		(end -1.9 -2.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "ad520b0d-78ed-478e-ba63-941f0da5e5ca")
-	)
-	(fp_line
 		(start -2.5 2.5)
 		(end 2.5 2.5)
 		(stroke
@@ -156,6 +182,16 @@
 		)
 		(layer "F.Fab")
 		(uuid "c90947c6-093e-4f9b-9a14-6b592fac8502")
+	)
+	(fp_line
+		(start 1.75 2.5)
+		(end 2.5 1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ad520b0d-78ed-478e-ba63-941f0da5e5ca")
 	)
 	(fp_line
 		(start 2.5 -2.5)
@@ -244,7 +280,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -180)
 		)
 	)
 )

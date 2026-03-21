@@ -495,14 +495,32 @@
       {
         "name": "+5V",
         "pcb_color": "rgb(255, 153, 0)",
-        "priority": 1,
+        "priority": 4,
         "schematic_color": "rgb(255, 153, 0)"
+      },
+      {
+        "name": "BLUE",
+        "pcb_color": "rgb(0, 0, 194)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 0, 194)"
       },
       {
         "name": "GND",
         "pcb_color": "rgb(72, 72, 72)",
-        "priority": 0,
+        "priority": 3,
         "schematic_color": "rgb(72, 72, 72)"
+      },
+      {
+        "name": "GREEN",
+        "pcb_color": "rgb(0, 132, 0)",
+        "priority": 1,
+        "schematic_color": "rgb(0, 132, 0)"
+      },
+      {
+        "name": "RED",
+        "pcb_color": "rgb(194, 0, 0)",
+        "priority": 2,
+        "schematic_color": "rgb(194, 0, 0)"
       }
     ],
     "meta": {
@@ -518,6 +536,18 @@
       {
         "netclass": "GND",
         "pattern": "GND"
+      },
+      {
+        "netclass": "BLUE",
+        "pattern": "*BLUE"
+      },
+      {
+        "netclass": "GREEN",
+        "pattern": "*GREEN"
+      },
+      {
+        "netclass": "RED",
+        "pattern": "*RED"
       }
     ]
   },

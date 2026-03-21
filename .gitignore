@@ -41,8 +41,8 @@ fp-info-cache
 # It is best practice to generate these manually for production
 *.log
 *.rpt
-gerber/
-plots/
+#gerber/
+#plots/
 #*.gbr
 #*.drl
 

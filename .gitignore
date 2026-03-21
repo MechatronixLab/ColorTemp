@@ -43,8 +43,8 @@ fp-info-cache
 *.rpt
 gerber/
 plots/
-*.gbr
-*.drl
+#*.gbr
+#*.drl
 
 # ======================================================================
 # GENERAL OS / TOOL FILES

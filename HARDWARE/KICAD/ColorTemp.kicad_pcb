@@ -4498,7 +4498,7 @@
 				)
 			)
 		)
-		(property "Part Number" "0402WGF1001TCE"
+		(property "Part Number" "0402WGF5101TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4524,7 +4524,7 @@
 				)
 			)
 		)
-		(property "JLCPCB" "C11702"
+		(property "JLCPCB" "C25905"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5200,7 +5200,7 @@
 				)
 			)
 		)
-		(property "Part Number" "0402WGF1001TCE"
+		(property "Part Number" "0402WGF5101TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5226,7 +5226,7 @@
 				)
 			)
 		)
-		(property "JLCPCB" "C11702"
+		(property "JLCPCB" "C25905"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")

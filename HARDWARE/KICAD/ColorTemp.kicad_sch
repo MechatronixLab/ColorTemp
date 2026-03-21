@@ -10,6 +10,7 @@
 		(rev "00")
 		(company "Mechatronix Lab")
 		(comment 1 "Eng. André A. M. Araújo")
+		(comment 2 "github.com/MechatronixLab/ColorTemp")
 	)
 	(lib_symbols
 		(symbol "ColorTemp:+5V"

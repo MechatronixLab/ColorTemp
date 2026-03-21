@@ -3335,7 +3335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" " 0402WGF2200TCE"
+		(property "Part Number" "0402WGF2200TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3353,7 +3353,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" " C25091"
+		(property "JLCPCB" "C25091"
 			(at 0 0 0)
 			(effects
 				(font

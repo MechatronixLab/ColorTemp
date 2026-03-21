@@ -1113,352 +1113,6 @@
 			)
 		)
 	)
-	(footprint "ColorTemp:LED_RGB_5050-6"
-		(layer "F.Cu")
-		(uuid "3730fe11-1f97-4f0e-b363-f03d47551ded")
-		(at 150 100)
-		(descr "http://cdn.sparkfun.com/datasheets/Components/LED/5060BRG4.pdf")
-		(tags "RGB LED 5050-6")
-		(property "Reference" "D1"
-			(at -4.5 0 180)
-			(layer "F.SilkS")
-			(uuid "0d296be8-d11f-4bde-8415-b42acf6c9693")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.175)
-					(bold yes)
-				)
-			)
-		)
-		(property "Value" "RGB"
-			(at 0 3.3 0)
-			(layer "F.Fab")
-			(uuid "e21e198e-08a4-4160-a9d1-68ec3df1c054")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8558290373673050112"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "35573226-85af-4f6c-ad44-fddd5d1ddc35")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3f6a1ce3-e0d2-47f6-8520-3a4b8f0165c0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Part Number" " TC5050RGBF08-3CJH-AF53A"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f4723e8f-9c65-4824-b3e1-b7a8195023d5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" " TCWIN"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c06a5974-52a4-4df7-b48c-7c5e289550af")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB" "C784540"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ebfe18e0-c81d-4b5a-b7ef-e1d2a55aba83")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/086869c5-2d38-4c77-b98d-8363a84df943")
-		(sheetname "/")
-		(sheetfile "ColorTemp.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.5 -2.75)
-			(end 2.5 -2.75)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ed082d5c-6e5e-4269-8d2a-2ec3e45da606")
-		)
-		(fp_line
-			(start -2.5 2.75)
-			(end 3.65 2.75)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "40c0dbb9-0e56-4a2e-ab44-890608c18d24")
-		)
-		(fp_poly
-			(pts
-				(xy 3.65 0.6) (xy 3.2 1.05) (xy 3.65 1.05)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "ff1c0d2e-1df8-4759-a046-f824927695ad")
-		)
-		(fp_poly
-			(pts
-				(xy -2.999903 -2.5) (xy -3.239903 -2.83) (xy -2.759903 -2.83) (xy -2.999903 -2.5)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "40e763ca-a1ab-4d38-a6a9-fdb3c1b057eb")
-		)
-		(fp_poly
-			(pts
-				(xy 2.15 2.35) (xy 1.75 2.75) (xy 3.65 2.75) (xy 3.65 2.35)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "f03286fb-f1b0-40f2-8c8a-a89722222455")
-		)
-		(fp_poly
-			(pts
-				(xy 3.65 1.05) (xy 3.65 2.35) (xy 3.5 2.35) (xy 3.5 1.05)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "6c2f6681-a80d-471b-83e4-f75b3945a0c7")
-		)
-		(fp_line
-			(start -3.65 -2.75)
-			(end -3.65 2.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "c7ea9617-a377-421c-be34-87da3b9ea206")
-		)
-		(fp_line
-			(start -3.65 2.75)
-			(end 3.65 2.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "02882f6e-aa20-486d-baa0-fb67e6fd50f5")
-		)
-		(fp_line
-			(start 3.65 -2.75)
-			(end -3.65 -2.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "c368b4d7-b198-496c-920c-01a7e054fae0")
-		)
-		(fp_line
-			(start 3.65 2.75)
-			(end 3.65 -2.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "7287c6a0-f23b-4c98-854e-006ced304da1")
-		)
-		(fp_line
-			(start -2.5 -2.5)
-			(end -2.5 2.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "34f1ea73-0f21-4812-a293-f92dbece00f8")
-		)
-		(fp_line
-			(start -2.5 2.5)
-			(end 2.5 2.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2045fe54-e065-4d42-a732-9904c950decb")
-		)
-		(fp_line
-			(start 1.75 2.5)
-			(end 2.5 1.75)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "fcf0327b-13e2-4ef7-824f-790cfb59b7cf")
-		)
-		(fp_line
-			(start 2.5 -2.5)
-			(end -2.5 -2.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e6a00e2e-6c61-4ee9-adce-69ca3bc6ff5c")
-		)
-		(fp_line
-			(start 2.5 2.5)
-			(end 2.5 -2.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "c2078431-8263-4a2f-8e67-a1745640a8ec")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 0 -1.9)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "0ff1ab8a-fca7-4e8f-8022-ad6480adb91f")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "8e351831-9422-49bd-bff3-5a43cd5038e1")
-			(effects
-				(font
-					(size 0.6 0.6)
-					(thickness 0.06)
-				)
-			)
-		)
-		(pad "1" smd rect
-			(at -2.4 -1.7 90)
-			(size 1.1 2)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 5 "+5V")
-			(pinfunction "A")
-			(pintype "passive")
-			(uuid "8d5b9f97-13d6-4ab4-9706-acab7ef2a7ce")
-		)
-		(pad "2" smd rect
-			(at -2.4 0 90)
-			(size 1.1 2)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 5 "+5V")
-			(pinfunction "A")
-			(pintype "passive")
-			(uuid "19aa872f-c77d-49dc-bcb0-5b2225e845f7")
-		)
-		(pad "3" smd rect
-			(at -2.4 1.7 90)
-			(size 1.1 2)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 5 "+5V")
-			(pinfunction "A")
-			(pintype "passive")
-			(uuid "3f7ba47a-0c30-436c-9d9a-003a46b03643")
-		)
-		(pad "4" smd rect
-			(at 2.4 1.7 90)
-			(size 1.1 2)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 8 "LED BLUE")
-			(pinfunction "K")
-			(pintype "passive")
-			(uuid "2bc99c82-e48c-4fc8-a78c-923b0da1de3f")
-		)
-		(pad "5" smd rect
-			(at 2.4 0 90)
-			(size 1.1 2)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 9 "LED RED")
-			(pinfunction "K")
-			(pintype "passive")
-			(uuid "09a8105a-6449-4146-b5fb-4b7f574e1cd5")
-		)
-		(pad "6" smd rect
-			(at 2.4 -1.7 90)
-			(size 1.1 2)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 10 "LED GREEN")
-			(pinfunction "K")
-			(pintype "passive")
-			(uuid "84b3a24c-c095-415a-b404-38259434bc40")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_RGB_5050-6.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -180)
-			)
-		)
-	)
 	(footprint "ColorTemp:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "3b6972d4-3847-4a6d-aa39-4d6f3d538dcf")
@@ -1990,7 +1644,7 @@
 				)
 			)
 		)
-		(property "Part Number" " 0402WGF2200TCE"
+		(property "Part Number" "0402WGF2200TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2016,7 +1670,7 @@
 				)
 			)
 		)
-		(property "JLCPCB" " C25091"
+		(property "JLCPCB" "C25091"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3056,7 +2710,7 @@
 				)
 			)
 		)
-		(property "Part Number" " 0402WGF2200TCE"
+		(property "Part Number" "0402WGF2200TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3082,7 +2736,7 @@
 				)
 			)
 		)
-		(property "JLCPCB" " C25091"
+		(property "JLCPCB" "C25091"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3543,6 +3197,351 @@
 			)
 		)
 	)
+	(footprint "ColorTemp:WS2850B"
+		(layer "F.Cu")
+		(uuid "9ec15142-0b63-4d5a-9682-11cb25a326ac")
+		(at 150 100 180)
+		(descr "http://cdn.sparkfun.com/datasheets/Components/LED/5060BRG4.pdf")
+		(tags "RGB LED 5050-6")
+		(property "Reference" "D1"
+			(at 4.5 0 0)
+			(layer "F.SilkS")
+			(uuid "c099dbcb-b78d-42a4-a6db-4a9fde81abc7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.175)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "WS2850B"
+			(at 0 3.3 0)
+			(layer "F.Fab")
+			(uuid "94dfa24b-7108-4938-b25e-4d274af19d79")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590906233161396224"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8331ef1e-dc7d-4b11-9e68-8cfd833b00c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd38d10a-3f8f-4fd6-9153-c4bd348ca7b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part Number" "WS2850B"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4c4e4ce-04e5-4bc7-8928-e022ba9ccf91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f078910e-dbdf-4546-a64a-e64dd5ba3408")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLCPCB" "C4154880"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2cd048fe-3c80-48d0-aef9-d9864b27b7f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(path "/eced99c1-f4dc-47a6-a0d8-dd7186ea0114")
+		(sheetname "/")
+		(sheetfile "ColorTemp.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 2.5 2.75)
+			(end -2.5 2.75)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f0b24dd3-9536-465d-bb66-5982019513e6")
+		)
+		(fp_line
+			(start 2.5 -2.75)
+			(end -3.65 -2.75)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "afaa6b05-17d1-4c0b-996a-d951d7823daa")
+		)
+		(fp_rect
+			(start -3.65 -2.35)
+			(end -3.5 -1.05)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.SilkS")
+			(uuid "ff4e3d0b-31b7-44aa-bc08-93654a7f9ac5")
+		)
+		(fp_poly
+			(pts
+				(xy -3.65 -0.6) (xy -3.2 -1.05) (xy -3.65 -1.05)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.SilkS")
+			(uuid "b0a96b90-3e3b-4d41-af84-39884083804c")
+		)
+		(fp_poly
+			(pts
+				(xy -2.15 -2.35) (xy -1.75 -2.75) (xy -3.65 -2.75) (xy -3.65 -2.35)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.SilkS")
+			(uuid "de6ca08b-7939-4664-9832-9cd1e573e21d")
+		)
+		(fp_poly
+			(pts
+				(xy -2.4 -3) (xy -2.64 -3.33) (xy -2.16 -3.33) (xy -2.4 -3)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.SilkS")
+			(uuid "c1b41f14-7b43-474b-942f-b73ee9f7abf4")
+		)
+		(fp_line
+			(start 3.65 2.75)
+			(end 3.65 -2.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ffdc1f97-e74b-44d4-bf24-0d9b554d9fe5")
+		)
+		(fp_line
+			(start 3.65 -2.75)
+			(end -3.65 -2.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c6753584-3e6a-4c79-8d51-667eeb5bbfe0")
+		)
+		(fp_line
+			(start -3.65 2.75)
+			(end 3.65 2.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c308b2d9-be91-4e67-8408-fd1041e8d781")
+		)
+		(fp_line
+			(start -3.65 -2.75)
+			(end -3.65 2.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bbad385b-7dbb-4d62-a7a3-579355ac4822")
+		)
+		(fp_line
+			(start 2.5 2.5)
+			(end 2.5 -2.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "219f306e-d3d6-4c5d-a4a6-5d34f8e7cb6a")
+		)
+		(fp_line
+			(start 2.5 -2.5)
+			(end -2.5 -2.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5b28c4c3-1047-4dcf-8253-0d3a0ceb59c6")
+		)
+		(fp_line
+			(start 1.75 2.5)
+			(end 2.5 1.75)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "14de8dfc-9f84-4007-b0c7-a95f3fd81166")
+		)
+		(fp_line
+			(start -2.5 2.5)
+			(end 2.5 2.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a71a50e3-ea42-4f80-9bd7-05283e08cb6b")
+		)
+		(fp_line
+			(start -2.5 -2.5)
+			(end -2.5 2.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "163b3dcf-f995-4e65-bc4b-915f56e07434")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0 -1.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "23810cdd-31b6-4b81-b74e-8084508872db")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "afca2596-e24b-4189-94e8-3238e58ba14e")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -2.4 -1.7 270)
+			(size 1.1 2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 8 "LED BLUE")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "be869f08-6906-4935-a6b1-53fef7d8b33c")
+		)
+		(pad "2" smd rect
+			(at -2.4 0 270)
+			(size 1.1 2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 9 "LED RED")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "a35f1c34-69f1-41ea-8be7-eb629c8eb490")
+		)
+		(pad "3" smd rect
+			(at -2.4 1.7 270)
+			(size 1.1 2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 10 "LED GREEN")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "beebdf06-8d50-4ed2-8505-b28ac07081c2")
+		)
+		(pad "4" smd rect
+			(at 2.4 1.7 270)
+			(size 1.1 2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 5 "+5V")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "b7e8c355-28b5-463e-854a-879ac4813fc6")
+		)
+		(pad "5" smd rect
+			(at 2.4 0 270)
+			(size 1.1 2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 5 "+5V")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "3d0a29f4-f6d1-484f-a701-99355f4905d6")
+		)
+		(pad "6" smd rect
+			(at 2.4 -1.7 270)
+			(size 1.1 2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 5 "+5V")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "8ae4c011-4249-4e36-a910-d6b2989eb5c8")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_RGB_5050-6.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "ColorTemp:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "ac950101-a392-4d00-a72d-72d255a04f4d")
@@ -3831,6 +3830,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part Number" "CH32V003F4U6"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43211674-fdfe-47ad-962c-d6c70f8d4597")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "WCH"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88c6f689-805e-4ae6-8fc3-a1a1987133e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLCPCB" "C5299908"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6ca0fbc-0cc7-4b2f-9010-6907aeda405b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4699,7 +4737,7 @@
 				)
 			)
 		)
-		(property "Part Number" " 0402WGF2200TCE"
+		(property "Part Number" "0402WGF2200TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4725,7 +4763,7 @@
 				)
 			)
 		)
-		(property "JLCPCB" " C25091"
+		(property "JLCPCB" "C25091"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")

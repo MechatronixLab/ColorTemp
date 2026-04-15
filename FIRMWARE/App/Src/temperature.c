@@ -54,7 +54,7 @@ uint16_t TEMPERATURE_GetT_dC(void)
 
     adc_mV = (adc_raw * ADC_VDD_mV) / 1024;
 
-    temperature = adc_mV;   // Temperature in 0.1 degrees C / mV (LM35)
+    temperature = adc_mV - 500;   // Temperature in 0.1 degrees C / mV (LM35)
 
     printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
                           temperature/10, temperature%10);

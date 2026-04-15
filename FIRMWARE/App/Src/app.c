@@ -27,7 +27,7 @@ void APP_Run(void)
         LED_SetRGB(   0,    0, 1000);
         Delay_Ms(125);
 
-        LED_SetRGB(  500,    0,  500);
+        LED_SetRGB(  50,    0,  500);
         Delay_Ms(125);
 
         TEMPERATURE_GetT_dC();

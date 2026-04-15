@@ -56,7 +56,7 @@ void LED_Init(void)
 
 void LED_SetRGB(uint16_t R, uint16_t G, uint16_t B)
 {
-    TIM1->CH1CVR = R;
-    TIM1->CH2CVR = G;
-    TIM1->CH3CVR = B; 
+    TIM1->CH1CVR = (1000 - R/10);
+    TIM1->CH2CVR = (1000 - G/10);
+    TIM1->CH3CVR = (1000 - B/10); 
 }

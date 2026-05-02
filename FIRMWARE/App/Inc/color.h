@@ -5,8 +5,6 @@
 
 #include "led.h"
 
-
-
 enum COLOR_colors {off, red, yellow, green, cyan, blue, purple, white};
 
 typedef struct 

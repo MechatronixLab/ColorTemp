@@ -56,8 +56,18 @@ int16_t TEMPERATURE_GetT_dC(void)
 
     temperature = adc_mV - 500;   // Temperature in 0.1 °„C/mV; 500mV offset (MCP9700A)
 
-    printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
-                          temperature/10, temperature%10);  // TODO: fix negative temperature
+    if (temperature < 0)
+    {
+        printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
+                         temperature/10, 
+                        -temperature%10);
+    }
+    else
+    {
+        printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
+                         temperature/10, 
+                         temperature%10);
+    }
 
     return temperature;
 }

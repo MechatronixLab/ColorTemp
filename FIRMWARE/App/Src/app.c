@@ -4,7 +4,9 @@ void APP_TemperatureToColor(int16_t temperature)
 {
     uint16_t R, G, B;
 
-    if (temperature < -200)
+    // TODO: Transition linearly from magenta to white (<200 and >600)
+
+    if (temperature < -200) // < 20.0 ¡ãC
     {
         R = 1000;
         G = 1000;
@@ -73,9 +75,18 @@ void APP_Run(void)
         // }
 
         APP_TemperatureToColor(t_dC);
+    if (t_dC < 0)
+    {
         printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
-                t_dC/10, t_dC%10);  // TODO: fix negative temperature
-        
+                         t_dC/10, 
+                        -t_dC%10);
+    }
+    else
+    {
+        printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
+                         t_dC/10, 
+                         t_dC%10);
+    }
         Delay_Ms(50);
 
         t_dC++;

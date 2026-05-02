@@ -57,10 +57,8 @@ void LED_Init(void)
 
 void LED_SetRGB(uint16_t R, uint16_t G, uint16_t B)
 {
-    uint16_t attenuate = 10;
-
-    // Subtract 1000 because LEDs are connected from VDD to the GPIOs
-    TIM1->CH3CVR = (1000 - R/attenuate);
-    TIM1->CH2CVR = (1000 - G/attenuate);
-    TIM1->CH1CVR = (1000 - B/attenuate); 
+    // Subtract from 1000 because LEDs are connected from VDD to the GPIOs
+    TIM1->CH3CVR = (1000 - R);
+    TIM1->CH2CVR = (1000 - G);
+    TIM1->CH1CVR = (1000 - B); 
 }

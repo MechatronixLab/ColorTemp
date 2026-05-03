@@ -11,5 +11,3 @@ void TEMPERATURE_Init(void);
 int16_t TEMPERATURE_GetT_dC(void);
 
 #endif /* INC_TEMPERATURE_H_ */
-
-

@@ -4,51 +4,49 @@ void APP_TemperatureToColor(int16_t temperature)
 {
     uint16_t R, G, B;
 
-    // TODO: Transition linearly from magenta to white (<200 and >600)
-
-    if (temperature < -400) // < 20.0 ¡ãC
+    if      (temperature < -400) // < 20.0 ¡ãC
     {
         R = 1000;
         G = 1000;
         B = 1000;
     }
-    else if (temperature <= -200)
+    else if (temperature < -200)
     {
         R = 1000;
         G = 5 * (-temperature - 200);
         B = 1000;        
     }
-    else if (temperature <= 0)
+    else if (temperature < 0)
     {
-        R = 5 * (- temperature);
+        R = 5 * (-temperature);
         G = 0;
         B = 1000;        
     }
-    else if (temperature <= 200)
+    else if (temperature < 200)
     {
         R = 0;
         G = 5 * temperature;
         B = 5 * (200 - temperature);        
     }
-    else if (temperature <= 400)
+    else if (temperature < 400)
     {
         R = 5 * (temperature - 200);
         G = 5 * (400 - temperature);
         B = 0;        
     }
-    else if (temperature <= 600)
+    else if (temperature < 600)
     {
         R = 1000;
         G = 0;
         B = 5 * (temperature - 400);        
     }
-    else if (temperature <= 800)
+    else if (temperature < 800)
     {
         R = 1000;
         G = 5 * (temperature - 600);
         B = 1000;    
     }
-    else    // (temperature > 800)
+    else // if (temperature >= 800)
     {
         R = 1000;
         G = 1000;
@@ -68,43 +66,29 @@ void APP_Init(void)
 
 void APP_Run(void)
 {
-    // uint16_t loop_counter = 0;
+    int16_t t_dC = 0;       // Temperature in 0.1 ¡ãC
 
-    int16_t t_dC = -450;
+    // Filter parameters
+    uint16_t alpha = 40;
 
     while(1)
     {
-
-
-        // COLOR_Sweep();
-        // Delay_Ms(2);
-        // loop_counter++;
-
-        // if(loop_counter >= 500)
-        // {
-        //     loop_counter = 0;
-        //     TEMPERATURE_GetT_dC();
-        // }
+        t_dC = (TEMPERATURE_GetT_dC() + (alpha - 1) * t_dC)/alpha;
 
         APP_TemperatureToColor(t_dC);
-    if (t_dC < 0)
-    {
-        printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
-                         t_dC/10, 
-                        -t_dC%10);
-    }
-    else
-    {
-        printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
-                         t_dC/10, 
-                         t_dC%10);
-    }
-        Delay_Ms(50);
+        Delay_Ms(100);
 
-        t_dC++;
-        if (t_dC > 850)
+        if (t_dC >= 0)
         {
-            t_dC = -450;
+            printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
+                            t_dC/10, 
+                            t_dC%10);
+        }
+        else
+        {
+            printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
+                            t_dC/10, 
+                           -t_dC%10);
         }
     }
 }

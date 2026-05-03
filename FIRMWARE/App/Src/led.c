@@ -5,7 +5,7 @@ void LED_Init(void)
     uint16_t prescaler = (  24 - 1);    // 24 MHz Master Clock -> 1 MHz
     uint16_t period    = (1000 - 1);    // 1 kHz period
 
-    GPIO_InitTypeDef GPIO_InitStructure = {0};
+    GPIO_InitTypeDef   GPIO_InitStructure = {0};
     TIM_OCInitTypeDef TIM_OCInitStructure = {0};
     TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure = {0};
 
@@ -45,13 +45,12 @@ void LED_Init(void)
     TIM_OC2Init(TIM1, &TIM_OCInitStructure); // PA1 - GREEN
     TIM_OC3Init(TIM1, &TIM_OCInitStructure); // PC3 - RED
 
-    // Housekeeping & Enable
     TIM_OC1PreloadConfig(TIM1, TIM_OCPreload_Enable);
     TIM_OC2PreloadConfig(TIM1, TIM_OCPreload_Enable);
     TIM_OC3PreloadConfig(TIM1, TIM_OCPreload_Enable);
     TIM_ARRPreloadConfig(TIM1, ENABLE);
 
-    TIM_CtrlPWMOutputs(TIM1, ENABLE); // Required for TIM1
+    TIM_CtrlPWMOutputs(TIM1, ENABLE);
     TIM_Cmd(TIM1, ENABLE);
 }
 

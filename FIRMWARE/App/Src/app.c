@@ -6,11 +6,17 @@ void APP_TemperatureToColor(int16_t temperature)
 
     // TODO: Transition linearly from magenta to white (<200 and >600)
 
-    if (temperature < -200) // < 20.0 ¡ãC
+    if (temperature < -400) // < 20.0 ¡ãC
     {
         R = 1000;
         G = 1000;
         B = 1000;
+    }
+    else if (temperature <= -200)
+    {
+        R = 1000;
+        G = 5 * (-temperature - 200);
+        B = 1000;        
     }
     else if (temperature <= 0)
     {
@@ -36,7 +42,13 @@ void APP_TemperatureToColor(int16_t temperature)
         G = 0;
         B = 5 * (temperature - 400);        
     }
-    else    // (temperature > 600)
+    else if (temperature <= 800)
+    {
+        R = 1000;
+        G = 5 * (temperature - 600);
+        B = 1000;    
+    }
+    else    // (temperature > 800)
     {
         R = 1000;
         G = 1000;
@@ -58,7 +70,7 @@ void APP_Run(void)
 {
     // uint16_t loop_counter = 0;
 
-    int16_t t_dC = -300;
+    int16_t t_dC = -450;
 
     while(1)
     {
@@ -90,9 +102,9 @@ void APP_Run(void)
         Delay_Ms(50);
 
         t_dC++;
-        if (t_dC > 700)
+        if (t_dC > 850)
         {
-            t_dC = -300;
+            t_dC = -450;
         }
     }
 }

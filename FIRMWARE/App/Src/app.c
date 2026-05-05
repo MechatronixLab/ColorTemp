@@ -68,9 +68,13 @@ void APP_Init(void)
 void APP_Run(void)
 {
     int16_t t_dC = 0;       // Temperature in 0.1 ¡ãC
+    uint16_t alpha = 40;    // Temperature filter parameter
 
-    // Filter parameters
-    uint16_t alpha = 40;
+    uint16_t delay_ms = 0;
+
+    uint8_t button_pressed = 0;
+
+    AppMode_e mode = MODE_NORMAL;
 
     while(1)
     {
@@ -78,26 +82,57 @@ void APP_Run(void)
 
         if (BUTTON_Get())
         {
-            APP_TemperatureToColor(1000);
+            if (button_pressed == 0)
+            {
+                mode++;
+                if (mode >= MODE_LAST)
+                {
+                    mode = MODE_NORMAL;
+                }
+                printf("Mode selected: %d \r\n", mode);
+            }
+            button_pressed = 1;
         }
         else
+        { 
+            button_pressed = 0;
+        }
+
+        switch (mode)
         {
-            APP_TemperatureToColor(t_dC);
+            case MODE_NORMAL:
+                delay_ms = 100;
+                APP_TemperatureToColor(t_dC);
+                break;
+
+            case MODE_EXTENDED:
+                delay_ms = 100;
+                APP_TemperatureToColor(t_dC);
+                break;
+
+            case MODE_SWEEP:
+                delay_ms = 1;
+                COLOR_Sweep();
+                break;
+            
+            default:
+                mode = MODE_NORMAL;
+                break;
         }
         
-        Delay_Ms(100);
+        Delay_Ms(delay_ms);
 
-        if (t_dC >= 0)
-        {
-            printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
-                            t_dC/10, 
-                            t_dC%10);
-        }
-        else
-        {
-            printf( "Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
-                            t_dC/10, 
-                           -t_dC%10);
-        }
+        // if (t_dC >= 0)
+        // {
+        //     printf("Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
+        //                     t_dC/10, 
+        //                     t_dC%10);
+        // }
+        // else
+        // {
+        //     printf("Temperature: %3d.%1d " CHAR_DEGREE "C \r\n", 
+        //                     t_dC/10, 
+        //                    -t_dC%10);
+        // }
     }
 }

@@ -58,6 +58,7 @@ void APP_TemperatureToColor(int16_t temperature)
 
 void APP_Init(void)
 {
+    BUTTON_Init();
     COLOR_Init();
     TEMPERATURE_Init();
 
@@ -73,9 +74,17 @@ void APP_Run(void)
 
     while(1)
     {
-        t_dC = (TEMPERATURE_GetT_dC() + (alpha - 1) * t_dC)/alpha;
+        t_dC = ( (alpha - 1) * t_dC + TEMPERATURE_GetT_dC() ) / alpha;
 
-        APP_TemperatureToColor(t_dC);
+        if (BUTTON_Get())
+        {
+            APP_TemperatureToColor(1000);
+        }
+        else
+        {
+            APP_TemperatureToColor(t_dC);
+        }
+        
         Delay_Ms(100);
 
         if (t_dC >= 0)

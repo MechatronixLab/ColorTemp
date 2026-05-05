@@ -3,6 +3,7 @@
 
 #include "ch32v00x.h"
 
+#include "button.h"
 #include "color.h"
 #include "temperaure.h"
 
